@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="test.php" method="post" id="formm">
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlInputFName" class="col-sm-4 col-form-label">First Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="first_name" id="exampleFormControlInputFName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlInputLName" class="col-sm-4 col-form-label">Last Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="last_name" id="exampleFormControlInputLName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlTextarea1" class="col-sm-4 col-form-label">Address</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3 row">
+                        <label for="disabledSelect" class="col-sm-4 col-form-label">Country</label>
+                        <div class="col-sm-8">
+                            <select id="disabledSelect" name="country" class="form-select">
+                                <option>Egypt</option>
+                                <option>Lebanon</option>
+                                <option>Saudi Arabia</option>
+                                <option>Jordan</option>
+                                <option>Syria</option>
+                                <option>Palestine</option>
+                                <option>Iraq</option>
+                                <option>Kuwait</option>
+                                <option>UAE</option>
+                                <option>Oman</option>
+                                <option>Bahrain</option>
+                                <option>Tunisia</option>
+                                <option>Algeria</option>
+                                <option>Morocco</option>
+                                <option>Lybia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        Gender
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="male" name="gender" id="male" required>
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="female" name="gender" id="female" required>
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Skills</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="HTML" name="skills[]" id="flexCheckHTML">
+                                    <label class="form-check-label" for="flexCheckHTML">
+                                        HTML
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="CSS" name="skills[]" id="flexCheckCSS">
+                                    <label class="form-check-label" for="flexCheckCSS">
+                                        CSS
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="JavaScript" name="skills[]" id="flexCheckJS">
+                                    <label class="form-check-label" for="flexCheckJS">
+                                        JavaScript
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="PHP" name="skills[]" id="flexCheckPHP">
+                                    <label class="form-check-label" for="flexCheckPHP">
+                                        PHP
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="MySQL" name="skills[]" id="flexCheckMySQL">
+                                    <label class="form-check-label" for="flexCheckMySQL">
+                                        MySQL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Laravel" name="skills[]" id="flexCheckLaravel">
+                                    <label class="form-check-label" for="flexCheckLaravel">
+                                        Laravel
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlInputUsername" class="col-sm-4 col-form-label">Username</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="exampleFormControlInputUsername">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="department" class="col-form-label col-sm-4">Department</label>
+                        <div class="col-sm-8">
+                            <input type="text" id="department" name="department" value="IT" class="form-control" placeholder="IT Department" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="captcha" class="form-label">Please enter the number:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="captcha-text">8729</span>
+                            <input type="text" class="form-control" id="captcha" placeholder="Enter the number above" required>
+                        </div>
+                        <div id="captcha-error" class="text-danger mt-2" style="display: none;">CAPATCHA incorrect. Please try again.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const correctCaptcha = '8729';
+        document.getElementById('formm').addEventListener('submit', function(event){
+            const userCaptcha = document.getElementById('captcha').value;
+            const captchaError = document.getElementById('captcha-error');
+            if(userCaptcha !== correctCaptcha){
+                event.preventDefault();
+                captchaError.style.display = 'block';
+            } else {
+                captchaError.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
